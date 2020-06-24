@@ -1,4 +1,4 @@
-# Copyright (c) 2018, The Loki Project
+# Copyright (c) 2018, The Kredits Project
 # Copyright (c) 2014-2019, The Monero Project
 #
 # All rights reserved.
@@ -37,7 +37,7 @@ target_link_libraries(blockchain_tools_common_libs INTERFACE
     extra)
 
 
-loki_add_executable(blockchain_import "loki-blockchain-import"
+kredits_add_executable(blockchain_import "kredits-blockchain-import"
   blockchain_import.cpp
   bootstrap_file.cpp
   blocksdat_file.cpp
@@ -49,7 +49,7 @@ if(ARCH_WIDTH)
   target_compile_definitions(blockchain_import PRIVATE ARCH_WIDTH=${ARCH_WIDTH})
 endif()
 
-loki_add_executable(blockchain_export "loki-blockchain-export"
+kredits_add_executable(blockchain_export "kredits-blockchain-export"
   blockchain_export.cpp
   bootstrap_file.cpp
   blocksdat_file.cpp
@@ -57,7 +57,7 @@ loki_add_executable(blockchain_export "loki-blockchain-export"
 target_link_libraries(blockchain_export PRIVATE blockchain_tools_common_libs)
 
 
-loki_add_executable(blockchain_blackball "loki-blockchain-mark-spent-outputs"
+kredits_add_executable(blockchain_blackball "kredits-blockchain-mark-spent-outputs"
   blockchain_blackball.cpp
   )
 
@@ -67,28 +67,28 @@ target_link_libraries(blockchain_blackball
     wallet)
 
 
-loki_add_executable(blockchain_usage "loki-blockchain-usage"
+kredits_add_executable(blockchain_usage "kredits-blockchain-usage"
   blockchain_usage.cpp
   )
 target_link_libraries(blockchain_usage PRIVATE blockchain_tools_common_libs)
 
-loki_add_executable(blockchain_ancestry "loki-blockchain-ancestry"
+kredits_add_executable(blockchain_ancestry "kredits-blockchain-ancestry"
   blockchain_ancestry.cpp
   )
 target_link_libraries(blockchain_ancestry PRIVATE blockchain_tools_common_libs)
 
-loki_add_executable(blockchain_depth "loki-blockchain-depth"
+kredits_add_executable(blockchain_depth "kredits-blockchain-depth"
   blockchain_depth.cpp
   )
 target_link_libraries(blockchain_depth PRIVATE blockchain_tools_common_libs)
 
-loki_add_executable(blockchain_stats "loki-blockchain-stats"
+kredits_add_executable(blockchain_stats "kredits-blockchain-stats"
   blockchain_stats.cpp
   )
 target_link_libraries(blockchain_stats PRIVATE blockchain_tools_common_libs)
 
-# TODO(loki): Blockchain pruning not supported in Loki yet
-# loki_add_executable(blockchain_prune_known_spent_data "loki-blockchain-prune-known-spent-data"
+# TODO(kredits): Blockchain pruning not supported in Kredits yet
+# kredits_add_executable(blockchain_prune_known_spent_data "kredits-blockchain-prune-known-spent-data"
 #   blockchain_prune_known_spent_data.cpp
 #   )
 # 
@@ -97,7 +97,7 @@ target_link_libraries(blockchain_stats PRIVATE blockchain_tools_common_libs)
 #     blockchain_tools_common_libs
 #     p2p)
 # 
-# loki_add_executable(blockchain_prune "loki-blockchain-prune"
+# kredits_add_executable(blockchain_prune "kredits-blockchain-prune"
 #   blockchain_prune.cpp
 #   )
 # 
