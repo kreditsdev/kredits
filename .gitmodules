@@ -17,4 +17,4 @@
 	url = https://github.com/kredits-project/kredits-randomXL
 [submodule "external/kredits-mq"]
 	path = external/kredits-mq
-	url = https://github.com/kredits-project/kredits-mq.git
+	url = https://github.com/kredits-project/kredits-mq
