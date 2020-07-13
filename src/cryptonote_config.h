@@ -233,7 +233,7 @@ namespace config
   namespace stagenet
   {
     uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x1bb0b7; //Xksa
-    uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX = 0x1fb0b7 //Xksi
+    uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX = 0x1fb0b7; //Xksi
     uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX = 0x2470b7; //Xkss
     uint16_t const P2P_DEFAULT_PORT = 45056;
     uint16_t const RPC_DEFAULT_PORT = 45057;
