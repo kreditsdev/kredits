@@ -82,11 +82,11 @@ FreeBSD one liner for required to build dependencies
 
 Clone recursively to pull-in needed submodule(s):
 
-`$ git clone --recursive https://github.com/kredits-project/kredits`
+`$ git clone --recursive https://github.com/kredits-project/kredits-core`
 
 If you already have a repo cloned, initialize and update:
 
-`$ cd kredits && git submodule init && git submodule update`
+`$ cd kredits-core && git submodule init && git submodule update`
 
 ### Build instructions
 
