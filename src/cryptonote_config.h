@@ -79,11 +79,11 @@ static_assert(STAKING_PORTIONS % 12 == 0, "Use a multiple of twelve, so that it 
 #define CRYPTONOTE_LONG_TERM_BLOCK_WEIGHT_WINDOW_SIZE   100000 // size in blocks of the long term block weight median window
 #define CRYPTONOTE_SHORT_TERM_BLOCK_WEIGHT_SURGE_FACTOR 50
 #define CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE          600
-#define CRYPTONOTE_DISPLAY_DECIMAL_POINT                9
+#define CRYPTONOTE_DISPLAY_DECIMAL_POINT                8
 
 #define PREMINE											(((uint64_t)10000000000) * COIN)
 
-#define FEE_PER_KB                                      ((uint64_t)2000000000) // 2 KREDITS (= 2 * pow(10, 9))
+#define FEE_PER_KB                                      ((uint64_t)200000000) // 2 KREDITS (= 2 * pow(10, 8))
 #define FEE_PER_BYTE                                    ((uint64_t)215)   // Fallback used in wallet if no fee is available from RPC
 #define FEE_PER_BYTE_V12                                ((uint64_t)17200) // Higher fee (and fallback) in v12 (only, v13 switches back)
 #define FEE_PER_OUTPUT                                  ((uint64_t)20000000) // 0.02 KREDITS per tx output (in addition to the per-byte fee), starting in v13

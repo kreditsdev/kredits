@@ -95,7 +95,7 @@ namespace cryptonote {
   uint64_t block_reward_unpenalized_formula_v8(uint64_t height)
   {
     std::fesetround(FE_TONEAREST);
-    uint64_t result = 28'000'000'000. + 100'000'000'000. / kredits::exp2(height / (720. * 90)); // halve every 90 days.
+    uint64_t result = 50'000'000'000. + 100'000'000'000. / kredits::exp2(height / (3600. * 90)); // Block_reward.
     return result;
   }
 
