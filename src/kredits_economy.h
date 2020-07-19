@@ -1,7 +1,7 @@
 #pragma once
 #include <cstdint>
 
-constexpr uint64_t COIN                       = (uint64_t)100000000; // 1 KREDITS = pow(10, 9)
+constexpr uint64_t COIN                       = (uint64_t)100000000; // 1 KREDITS = pow(10, 8)
 constexpr uint64_t MONEY_SUPPLY               = ((uint64_t)(100000000000 * COIN)); // MONEY_SUPPLY - total number coins to be generated
 constexpr uint64_t EMISSION_LINEAR_BASE       = ((uint64_t)(1) << 58);
 constexpr uint64_t EMISSION_SUPPLY_MULTIPLIER = 20;
