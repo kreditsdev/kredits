@@ -580,22 +580,16 @@ namespace nodetool
     std::set<std::string> full_addrs;
     if (nettype == cryptonote::TESTNET)
     {
-      full_addrs.insert("159.69.109.145:38156");
+      full_addrs.insert("139.180.187.131:35156");
     }
     else if (nettype == cryptonote::STAGENET)
     {
-      full_addrs.insert("159.69.109.145:38153");
     }
     else if (nettype == cryptonote::FAKECHAIN)
     {
     }
     else
     {
-      full_addrs.insert("116.203.196.12:22022");  // Hetzner seed node
-      full_addrs.insert("149.56.165.115:22022");  // Jason's seed node
-      full_addrs.insert("192.250.236.196:22022"); // Rangeproof Test VPSC Box
-      full_addrs.insert("144.217.243.15:22022");  // OVH(1)
-      full_addrs.insert("51.38.133.145:22022");   // OVH(2)
     }
     return full_addrs;
   }
