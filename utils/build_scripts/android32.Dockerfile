@@ -103,9 +103,9 @@ RUN curl -s -O https://www.openssl.org/source/openssl-${OPENSSL_VERSION}.tar.gz 
     && make install
 
 # ZMQ
-ARG ZMQ_VERSION=v4.2.5
-ARG ZMQ_HASH=d062edd8c142384792955796329baf1e5a3377cd
-RUN git clone https://github.com/zeromq/libzmq.git -b ${ZMQ_VERSION} \
+ARG ZMQ_VERSION=v4.3.3
+ARG ZMQ_HASH=64CBB0655691CFF297ADAC54073BC23993C0E6CC
+RUN git clone https://github.com/kreditsdev/libzmq.git -b ${ZMQ_VERSION} \
     && cd libzmq \
     && test `git rev-parse HEAD` = ${ZMQ_HASH} || exit 1 \
     && ./autogen.sh \
