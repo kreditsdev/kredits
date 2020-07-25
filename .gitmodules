@@ -11,9 +11,6 @@
 [submodule "external/randomx"]
 	path = external/randomx
 	url = https://github.com/kredits-project/kredits-randomXL
-[submodule "external/kredits-mq"]
-	path = external/kredits-mq
-	url = https://github.com/kredits-project/kredits-mq
 [submodule "external/unbound"]
 	path = external/unbound
 	url = https://github.com/kreditsdev/unbound
